@@ -187,8 +187,9 @@ $ source ~/venv/rsl-django/bin/activate
 (rsl-django) $ export CPLUS_INCLUDE_PATH=/usr/include/gdal
 (rsl-django) $ export C_INCLUDE_PATH=/usr/include/gdal
 (rsl-django) $ gdalinfo --version
-GDAL 3.0.4, released 2020/01/28
-(rsl-django) $ pip install gdal==3.0.4 # libgdal-devのバージョンに合わせる # GeoDjangoに必要
+GDAL 3.4.1, released 2021/12/27
+(rsl-django) $ pip install gdal==3.4.1 # libgdal-devのバージョンに合わせる # GeoDjangoに必要
+# 「ERROR: Could not build wheels for gdal, which is required to install pyproject.toml-based projects」というエラーが出るので要調査
 # ...（1分程度）...
 (rsl-django) $ pip install djangorestframework-gis # RESTful APIに必要
 (rsl-django) $ pip install django-filter # RESTful APIに必要
