@@ -86,9 +86,9 @@ postgres=# \q
 # '\'はキーボードの右下のバックスラッシュ「ろ」を押す（右上の'￥'ではない）
 ```
 
+## Pythonのインストール
 
 ## 各種パッケージのインストール
-
 ※本チュートリアルでは、下記のパッケージすべてを使用しているというわけではありません。適宜、必要なもののみインストールして頂いて結構です。
 
 ### 基本
@@ -101,7 +101,6 @@ $ sudo apt install tree
 $ sudo apt install libbz2-dev # pandasのインポートに必要
 $ sudo apt install python3-tk # matplotlib.show()で画像を表示する際に必要
 $ sudo apt install libffi-dev # scikit-learnのインポートに必要
-# ...（5分程度）...
 ```
 
 ### GDAL関連
@@ -109,19 +108,15 @@ $ sudo apt install libffi-dev # scikit-learnのインポートに必要
 $ sudo apt install build-essential # GDALのインストールに必要
 $ sudo apt install libgdal-dev	# GDALのインストールに必要
 $ sudo apt install python3-gdal	# GDALのインストールに必要
-```
-
-### DB関連
-```bash
-$ sudo apt install postgresql
-$ sudo apt install postgis
-# ...（3分程度）...
+# ...（5分程度）...
 ```
 
 ### NLP関連
 ```bash
 $ sudo apt install mecab libmecab-dev mecab-ipadic mecab-ipadic-utf8
 ```
+
+
 
 ## rsl-django仮想環境の構築
 ```bash
