@@ -40,21 +40,20 @@ $ diff /etc/apt/sources.list-org /etc/apt/sources.list
 sudo apt install make
 ```
 
-
 ## `sysv-rc-conf`のインストール
-
 ```bash
 $ cd ~/src/
 $ wget http://archive.ubuntu.com/ubuntu/pool/universe/s/sysv-rc-conf/sysv-rc-conf_0.99.orig.tar.gz
 $ tar zxvf sysv-rc-conf_0.99.orig.tar.gz
 $ cd sysv-rc-conf-0.99
 $ sudo make
-sudo make install
-sudo apt install libcurses-ui-perl libterm-readkey-perl libcurses-perl
-sudo sysv-rc-conf
+$ sudo make install
+$ sudo apt install libcurses-ui-perl libterm-readkey-perl libcurses-perl
+$ sudo sysv-rc-conf
 # [h]キーでバージョンを確認できる．
-cd ../
-rm -f sysv-rc-conf_0.99.orig.tar.gz
+$ cd ../
+$ rm -f sysv-rc-conf_0.99.orig.tar.gz
+```
 
 
 ## 各種パッケージのインストール
