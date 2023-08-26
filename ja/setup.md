@@ -86,8 +86,6 @@ postgres=# \q
 # '\'はキーボードの右下のバックスラッシュ「ろ」を押す（右上の'￥'ではない）
 ```
 
-## Pythonのインストール
-
 ## 各種パッケージのインストール
 ※本チュートリアルでは、下記のパッケージすべてを使用しているというわけではありません。適宜、必要なもののみインストールして頂いて結構です。
 
@@ -108,6 +106,7 @@ $ sudo apt install libffi-dev # scikit-learnのインポートに必要
 $ sudo apt install build-essential # GDALのインストールに必要
 $ sudo apt install libgdal-dev	# GDALのインストールに必要
 $ sudo apt install python3-gdal	# GDALのインストールに必要
+$ sudo apt install gdal-bin # GDALのインストールに必要
 # ...（5分程度）...
 ```
 
@@ -116,13 +115,17 @@ $ sudo apt install python3-gdal	# GDALのインストールに必要
 $ sudo apt install mecab libmecab-dev mecab-ipadic mecab-ipadic-utf8
 ```
 
-
+## Pythonのバージョンの確認
+```bash
+$ python3 --version
+```
 
 ## rsl-django仮想環境の構築
 ```bash
+$ sudo apt install python3-venv
 $ mkdir ~/venv/
 $ cd ~/venv/
-$ python3.9 -m venv rsl-django
+$ python3 -m venv rsl-django
 ```
 
 ## rsl-django仮想環境のアクティベート
@@ -141,7 +144,6 @@ $ source ~/venv/rsl-django/bin/activate
 ```
 
 ## 各種パッケージのインストール
-
 ※本チュートリアルでは、下記のパッケージすべてを使用しているというわけではありません。適宜、必要なもののみインストールして頂いて結構です。
 
 ### 基本
