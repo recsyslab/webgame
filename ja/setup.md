@@ -15,6 +15,48 @@ $ sudo apt update
 $ sudo apt upgrade
 ```
 
+## ディレクトリの準備
+```bash
+$ mkdir ~/bin/
+$ mkdir ~/src/
+$ mkdir ~/opt/
+```
+
+## 設定ファイルの準備
+```bash
+$ cp ~/.profile ~/.profile-org
+$ echo -e '\n\n#### #### Add below. #### ####' >> ~/.profile
+$ diff ~/.profile-org ~/.profile
+$ cp ~/.bashrc ~/.bashrc-org
+$ echo -e '\n\n#### #### Add below. #### ####' >> ~/.bashrc
+$ diff ~/.bashrc-org ~/.bashrc
+$ sudo cp /etc/apt/sources.list /etc/apt/sources.list-org
+$ sudo sh -c 'echo "\n\n#### #### Add below. #### ####" >> /etc/apt/sources.list'
+$ diff /etc/apt/sources.list-org /etc/apt/sources.list
+```
+
+## `make`のインストール
+```bash
+sudo apt install make
+```
+
+
+## `sysv-rc-conf`のインストール
+
+```bash
+$ cd ~/src/
+$ wget http://archive.ubuntu.com/ubuntu/pool/universe/s/sysv-rc-conf/sysv-rc-conf_0.99.orig.tar.gz
+$ tar zxvf sysv-rc-conf_0.99.orig.tar.gz
+$ cd sysv-rc-conf-0.99
+$ sudo make
+sudo make install
+sudo apt install libcurses-ui-perl libterm-readkey-perl libcurses-perl
+sudo sysv-rc-conf
+# [h]キーでバージョンを確認できる．
+cd ../
+rm -f sysv-rc-conf_0.99.orig.tar.gz
+
+
 ## 各種パッケージのインストール
 
 ※本チュートリアルでは、下記のパッケージすべてを使用しているというわけではありません。適宜、必要なもののみインストールして頂いて結構です。
