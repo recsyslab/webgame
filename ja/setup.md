@@ -56,6 +56,37 @@ $ cd ../
 $ rm -f sysv-rc-conf_0.99.orig.tar.gz
 ```
 
+## Google Chromeのインストール
+```bash
+$ cd
+$ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+$ sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+$ sudo apt update
+$ sudo apt install google-chrome-stable
+```
+
+下記コマンドでGoogle Chromeが起動すればOK。
+```bash
+$ google-chrome
+```
+
+## PostgreSQL+PostGISのインストール
+```bash
+$ sudo apt install postgresql
+$ sudo apt install postgis
+# ...（3分程度）...
+```
+
+## PostgreSQLの動作確認とバージョンの確認
+```bash
+$ sudo -u postgres psql
+postgres=# SELECT version();
+# インストールしたバージョンが表示されればOK。
+postgres=# \q
+# '\'はキーボードの右下のバックスラッシュ「ろ」を押す（右上の'￥'ではない）
+```
+
+
 ## 各種パッケージのインストール
 
 ※本チュートリアルでは、下記のパッケージすべてを使用しているというわけではありません。適宜、必要なもののみインストールして頂いて結構です。
