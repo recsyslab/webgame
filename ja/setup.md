@@ -35,9 +35,10 @@ $ sudo sh -c 'echo "\n\n#### #### Add below. #### ####" >> /etc/apt/sources.list
 $ diff /etc/apt/sources.list-org /etc/apt/sources.list
 ```
 
-## `make`のインストール
+## `make`、`git`のインストール
 ```bash
 sudo apt install make
+sudo apt install git
 ```
 
 ## `sysv-rc-conf`のインストール
@@ -54,7 +55,6 @@ $ sudo sysv-rc-conf
 $ cd ../
 $ rm -f sysv-rc-conf_0.99.orig.tar.gz
 ```
-
 
 ## 各種パッケージのインストール
 
