@@ -33,7 +33,8 @@ layout: default
 ```
 
 #### 参考
-1. [WSL2の環境に同じ種類のディストリビューションを複製する | 株式会社ピース｜PEACE Inc.](https://www.4peace.co.jp/blog_tech/621/)
+1. [WSL 上で同一ディストリビューションの環境を複数インストール･管理する - Qiita](https://qiita.com/souyakuchan/items/9f95043cf9c4eda2e1cc)
+2. [WSL2の環境に同じ種類のディストリビューションを複製する | 株式会社ピース｜PEACE Inc.](https://www.4peace.co.jp/blog_tech/621/)
 
 ### ユーザパスワードの変更
 ※ここでは、パスワードを`ryukoku`とする。
