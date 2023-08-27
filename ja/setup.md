@@ -120,10 +120,21 @@ $ sudo apt update
 $ sudo apt install google-chrome-stable
 ```
 
+日本語の文字化けへの対応
+```bash
+$ sudo apt install language-pack-ja
+$ sudo apt install fonts-ipafont
+$ sudo apt install fonts-ipaexfont
+$ fc-cache -fv
+```
+
 下記コマンドでGoogle Chromeが起動すればOK。
 ```bash
 $ google-chrome
 ```
+
+#### 参考
+1. [【WSL2, Debian, Ubuntu】システムテスト等でChromeを立ち上げた際にWSL2側の問題で文字化けしてしまう問題を解決する方法 - LEFログ：学習記録ノート](https://lef237.hatenablog.com/entry/2022/12/05/163550)
 
 ### PostgreSQL+PostGISのインストール
 ```bash
