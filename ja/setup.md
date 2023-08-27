@@ -297,4 +297,29 @@ GDAL 3.4.1, released 2021/12/27（不要？）
 # プロンプトが元に戻ればOK
 ```
 
+## Visual Studio Codeのインストール
+```bash
+$ cd
+$ sudo apt install libsecret-1-0
+$ wget 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64' -O code_latest_amd64.deb
+$ sudo dpkg -i code_latest_amd64.deb
+$ rm -f code_latest_amd64.deb
+```
+
+## Visual Studio Codeの実行
+```bash
+$ code
+```
+
+### webgame環境のエクスポート
+1. **Windowsマーク**を右クリックし、**ターミナル (管理者)** をクリックする。
+2. ターミナルで下記を実行し、`Ubuntu-22.04`が存在することを確認する。
+```bash
+> wsl -l --verbose
+```
+3. 下記を実行し、`webgame`環境をエクスポートする。
+```bash
+> wsl --export webgame wsl2\webgame.tar
+```
+
 {% endraw %}
