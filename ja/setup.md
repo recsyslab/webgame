@@ -32,6 +32,9 @@ layout: default
 > wsl -l --verbose
 ```
 
+#### 参考
+1. [WSL2の環境に同じ種類のディストリビューションを複製する | 株式会社ピース｜PEACE Inc.](https://www.4peace.co.jp/blog_tech/621/)
+
 ### ユーザパスワードの変更
 ※ここでは、パスワードを`ryukoku`とする。
 ```bash
