@@ -33,7 +33,7 @@ layout: default
 ```
 
 ### webgame環境の実行
-下記コマンドで`webgame`環境を実行する。【ユーザ名】は元の`Ubuntu-22.04`環境で作成したユーザ名を入れること。
+下記コマンドで`webgame`環境を実行する。【ユーザ名】には元の`Ubuntu-22.04`環境で作成したユーザ名を入れること。
 ```bash
 > wsl --distribution webgame -user 【ユーザ名】
 ```
