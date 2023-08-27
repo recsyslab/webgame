@@ -24,16 +24,14 @@ layout: default
 ```bash
 > wsl --import webgame wsl2\webgame\ wsl2\Ubuntu-22.04.tar
 ```
-
+5. 下記を実行し、`webgame`環境が正しく構築されていることを確認する。
+```bash
+> wsl -l --verbose
+```
 ```bash
 > wsl -d webgame
 ```
 
-> wsl --install -d Ubuntu-22.04 
-> wsl --update
-> wsl --shutdown
-> exit
-```
 
 ## パッケージのアップグレード
 ```bash
