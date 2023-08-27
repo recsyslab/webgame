@@ -8,6 +8,32 @@ layout: default
 {% raw %}
 
 # 環境構築
+※本チュートリアルでは、WSL2環境に既にUbuntu-22.04環境がインストールされていることを前提とする。
+
+1. **Windowsマーク**を右クリックし、**ターミナル (管理者)** をクリックする。
+2. ターミナルで下記を実行し、`Ubuntu-22.04`が存在することを確認する。
+```bash
+> wsl -l --verbose
+```
+3. 下記を実行し、`Ubuntu-22.04`環境をエクスポートする。
+```bash
+> mkdir wsl2\
+> wsl --export Ubuntu-22.04 wsl2\Ubuntu-22.04.tar
+```
+4. 下記を実行し、`Ubuntu-22.04`環境を`webgame`という名前でインポートする。
+```bash
+> wsl --import webgame wsl2\webgame\ wsl2\Ubuntu-22.04.tar
+```
+
+```bash
+> wsl -d webgame
+```
+
+> wsl --install -d Ubuntu-22.04 
+> wsl --update
+> wsl --shutdown
+> exit
+```
 
 ## パッケージのアップグレード
 ```bash
