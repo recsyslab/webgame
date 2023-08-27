@@ -32,10 +32,17 @@ layout: default
 > wsl -l --verbose
 ```
 
+### ユーザパスワードの変更
+```bash
+> wsl -d webgame -u root
+# passwd rsl
+# exit
+```
+
 ### webgame環境の起動
 下記コマンドで`webgame`環境を起動する。【ユーザ名】には元の`Ubuntu-22.04`環境で作成したユーザ名を入れること。
 ```bash
-> wsl --distribution webgame -user 【ユーザ名】
+> wsl -d webgame -u 【ユーザ名】
 ```
 
 ### webgame環境の解除
