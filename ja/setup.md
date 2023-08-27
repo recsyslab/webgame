@@ -32,8 +32,8 @@ layout: default
 > wsl -l --verbose
 ```
 
-### webgame環境の実行
-下記コマンドで`webgame`環境を実行する。【ユーザ名】には元の`Ubuntu-22.04`環境で作成したユーザ名を入れること。
+### webgame環境の起動
+下記コマンドで`webgame`環境を起動する。【ユーザ名】には元の`Ubuntu-22.04`環境で作成したユーザ名を入れること。
 ```bash
 > wsl --distribution webgame -user 【ユーザ名】
 ```
@@ -45,20 +45,23 @@ layout: default
 > wsl --list --verbose
 ```
 
-## パッケージのアップグレード
+## webgame環境の設定
+※`webgame`環境を起動したうえで、以下のコマンドを実行してください。
+
+### パッケージのアップグレード
 ```bash
 $ sudo apt update
 $ sudo apt upgrade
 ```
 
-## ディレクトリの準備
+### ディレクトリの準備（不要？）
 ```bash
 $ mkdir ~/bin/
 $ mkdir ~/src/
 $ mkdir ~/opt/
 ```
 
-## 設定ファイルの準備
+### 設定ファイルの準備（不要？）
 ```bash
 $ cp ~/.profile ~/.profile-org
 $ echo -e '\n\n#### #### Add below. #### ####' >> ~/.profile
@@ -71,14 +74,15 @@ $ sudo sh -c 'echo "\n\n#### #### Add below. #### ####" >> /etc/apt/sources.list
 $ diff /etc/apt/sources.list-org /etc/apt/sources.list
 ```
 
-## `make`、`git`のインストール
+### `make`、`git`のインストール
 ```bash
 sudo apt install make
-sudo apt install git
+sudo apt install git（不要？）
 ```
 
-## `sysv-rc-conf`のインストール
+### `sysv-rc-conf`のインストール
 ```bash
+$ mkdir ~/src/
 $ cd ~/src/
 $ wget http://archive.ubuntu.com/ubuntu/pool/universe/s/sysv-rc-conf/sysv-rc-conf_0.99.orig.tar.gz
 $ tar zxvf sysv-rc-conf_0.99.orig.tar.gz
@@ -92,7 +96,7 @@ $ cd ../
 $ rm -f sysv-rc-conf_0.99.orig.tar.gz
 ```
 
-## Google Chromeのインストール
+### Google Chromeのインストール
 ```bash
 $ cd
 $ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
