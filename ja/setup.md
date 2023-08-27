@@ -21,11 +21,11 @@ layout: default
 3. 下記を実行し、`Ubuntu-22.04`環境をエクスポートする。
 ```bash
 > mkdir wsl2\
-> wsl --export Ubuntu-22.04 wsl2\Ubuntu-22.04.tar
+> wsl --export Ubuntu-22.04 wsl2\Ubuntu-22.04_base.tar
 ```
 4. 下記を実行し、`Ubuntu-22.04`環境を`webgame`という名前でインポートする。
 ```bash
-> wsl --import webgame wsl2\webgame\ wsl2\Ubuntu-22.04.tar
+> wsl --import webgame wsl2\webgame\ wsl2\Ubuntu-22.04_base.tar
 ```
 5. 下記を実行し、`webgame`環境が正しく構築されていることを確認する。
 ```bash
