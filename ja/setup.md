@@ -33,6 +33,7 @@ layout: default
 ```
 
 ### ユーザパスワードの変更
+※ここでは、パスワードを`ryukoku`とする。
 ```bash
 > wsl -d webgame -u root
 # passwd rsl
@@ -121,7 +122,6 @@ $ google-chrome
 ```bash
 $ sudo apt install postgresql
 $ sudo apt install postgis
-# ...（3分程度）...
 ```
 
 ### PostgreSQLの動作確認とバージョンの確認
@@ -139,6 +139,7 @@ $ sudo -u postgres psql
 ```
 
 下記コマンドで、PostgreSQLに`postgres`ユーザとしてログインするためのパスワードを指定する。
+※ここでは、パスワードを`ryukoku`とする。
 ```pgsql
 postgres=# \password
 postgres=# \q
