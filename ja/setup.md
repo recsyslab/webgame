@@ -10,6 +10,9 @@ layout: default
 # 環境構築
 ※本チュートリアルでは、WSL2環境に既にUbuntu-22.04環境がインストールされていることを前提とする。
 
+## webgame環境の構築
+
+### 既存のUbuntu環境の複製
 1. **Windowsマーク**を右クリックし、**ターミナル (管理者)** をクリックする。
 2. ターミナルで下記を実行し、`Ubuntu-22.04`が存在することを確認する。
 ```bash
@@ -28,10 +31,19 @@ layout: default
 ```bash
 > wsl -l --verbose
 ```
+
+### webgame環境の実行
+下記コマンドで`webgame`環境を実行する。【ユーザ名】は元の`Ubuntu-22.04`環境で作成したユーザ名を入れること。
 ```bash
-> wsl -d webgame
+> wsl --distribution webgame -user 【ユーザ名】
 ```
 
+### webgame環境の解除
+`webgame`環境が不要になれば、下記コマンドで`webgame`環境を解除する。
+```bash
+> wsl --unregister webgame
+> wsl --list --verbose
+```
 
 ## パッケージのアップグレード
 ```bash
