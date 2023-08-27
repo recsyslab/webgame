@@ -40,6 +40,9 @@ layout: default
 # exit
 ```
 
+#### 参考
+1. [WSL::Ubuntuのユーザパスワード変更 - fujii's公開ノート](https://scrapbox.io/fujii-memo/WSL::Ubuntu%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%E5%A4%89%E6%9B%B4)
+
 ### webgame環境の起動
 下記コマンドで`webgame`環境を起動する。【ユーザ名】には元の`Ubuntu-22.04`環境で作成したユーザ名を入れること。
 ```bash
