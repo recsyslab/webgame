@@ -266,7 +266,7 @@ $ source ~/venv/rsl-webgame/bin/activate
 (rsl-webgame) $ pip install scikit-learn
 ```
 
-### DB関連（不要？）
+### DB関連
 ```bash
 (rsl-webgame) $ pip install psycopg2-binary
 ```
