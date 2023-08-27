@@ -25,5 +25,8 @@ layout: default
    5. 上メニューから**Start Debugging**ボタン（再生ボタン）をクリックする。
    6. ブラウザで`http://localhost:8000/`にアクセスし、「The install worked successfully! Congratulations!」と表示されればOK。
 
+#### 参考
+1. [Python and Django tutorial in Visual Studio Code](https://code.visualstudio.com/docs/python/tutorial-django)
+2. [Django を VSCode で 開発するまでの手順 - Qiita](https://qiita.com/soh506/items/12a5df2d19f1c2c792fe)
 
 {% endraw %}
