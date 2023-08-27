@@ -181,14 +181,14 @@ $ sudo -u postgres psql
 $ sudo apt install tree
 ```
 
-### データ分析関連
+### データ分析関連（不要？）
 ```bash
 $ sudo apt install libbz2-dev # pandasのインポートに必要
 $ sudo apt install python3-tk # matplotlib.show()で画像を表示する際に必要
 $ sudo apt install libffi-dev # scikit-learnのインポートに必要
 ```
 
-### GDAL関連
+### GDAL関連（不要？）
 ```bash
 $ sudo apt install build-essential # GDALのインストールに必要
 $ sudo apt install libgdal-dev	# GDALのインストールに必要
@@ -197,7 +197,7 @@ $ sudo apt install gdal-bin # GDALのインストールに必要
 # ...（5分程度）...
 ```
 
-### NLP関連
+### NLP関連（不要？）
 ```bash
 $ sudo apt install mecab libmecab-dev mecab-ipadic mecab-ipadic-utf8
 ```
@@ -207,21 +207,21 @@ $ sudo apt install mecab libmecab-dev mecab-ipadic mecab-ipadic-utf8
 $ python3 --version
 ```
 
-## rsl-django仮想環境の構築
+## rsl-webgame仮想環境の構築
 ```bash
 $ sudo apt install python3-venv
 $ mkdir ~/venv/
 $ cd ~/venv/
-$ python3 -m venv rsl-django
+$ python3 -m venv rsl-webgame
 ```
 
-## rsl-django仮想環境のアクティベート
+## rsl-webgame仮想環境のアクティベート
 ```bash
-$ source ~/venv/rsl-django/bin/activate
-# プロンプトが(rsl-django) ...$となればOK
+$ source ~/venv/rsl-webgame/bin/activate
+# プロンプトが(rsl-webgame) ...$となればOK
 ```
 
-以降、プロンプトが`(rsl-django) $`となっている行はrsl-django仮想環境上で実行することを表します。
+以降、プロンプトが`(rsl-webgame) $`となっている行はrsl-webgame仮想環境上で実行することを表します。
 
 ## pipのアップグレード
 ```bash
