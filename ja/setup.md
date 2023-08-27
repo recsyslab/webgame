@@ -110,20 +110,59 @@ $ sudo apt install google-chrome-stable
 $ google-chrome
 ```
 
-## PostgreSQL+PostGISのインストール
+### PostgreSQL+PostGISのインストール
 ```bash
 $ sudo apt install postgresql
 $ sudo apt install postgis
 # ...（3分程度）...
 ```
 
-## PostgreSQLの動作確認とバージョンの確認
+### PostgreSQLの動作確認とバージョンの確認
 ```bash
 $ sudo -u postgres psql
 postgres=# SELECT version();
 # インストールしたバージョンが表示されればOK。
 postgres=# \q
 # '\'はキーボードの右下のバックスラッシュ「ろ」を押す（右上の'￥'ではない）
+```
+
+### PostgreSQLのパスワードの設定
+```bash
+$ sudo -u postgres psql
+```
+
+下記コマンドで、PostgreSQLに`postgres`ユーザとしてログインするためのパスワードを指定する。
+```pgsql
+postgres=# \password
+postgres=# \q
+```
+
+※ここでは、PostgreSQLのバージョンが`14.x`であることを前提とする。異なるバージョンの場合、`14`の部分は自身のバージョンに合わせること。
+```bash
+$ sudo less /etc/postgresql/14/main/pg_hba.conf
+$ sudo nano /etc/postgresql/14/main/pg_hba.conf
+```
+`pg_hba.conf`の下記3箇所について`peer`を`md5`に書き換える。
+
+`pg_hba.conf`
+```
+...（略）...
+# Database administrative login by Unix domain socket
+local all postgres md5
+...（略）...
+# "local" is for Unix domain socket connections only
+local all all md5
+...（略）...
+# Allow replication connections from localhost, by a user with the
+# replication privilege.
+local replication all md5
+...（略）...
+```
+
+```bash
+$ sudo service postgresql restart
+$ sudo -u postgres psql
+# 設定したパスワードを入力してログインできることを確認する。
 ```
 
 ## 各種パッケージのインストール
