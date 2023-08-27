@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Codeの設定
+title: Visual Studio Code
 layout: default
 ---
 
