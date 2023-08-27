@@ -225,9 +225,9 @@ $ source ~/venv/rsl-webgame/bin/activate
 
 ## pipのアップグレード
 ```bash
-(rsl-django) $ pip --version
-(rsl-django) $ pip install --upgrade pip
-(rsl-django) $ pip --version
+(rsl-webgame) $ pip --version
+(rsl-webgame) $ pip install --upgrade pip
+(rsl-webgame) $ pip --version
 ```
 
 ## 各種パッケージのインストール
@@ -235,65 +235,65 @@ $ source ~/venv/rsl-webgame/bin/activate
 
 ### 基本
 ```bash
-(rsl-django) $ pip install ipython
-(rsl-django) $ pip install tqdm
+(rsl-webgame) $ pip install ipython
+(rsl-webgame) $ pip install tqdm（不要？）
 ```
 
-### データ分析関連
+### データ分析関連（不要？）
 ```bash
-(rsl-django) $ pip install numpy
-(rsl-django) $ pip install scipy
-(rsl-django) $ pip install matplotlib
-(rsl-django) $ pip install pandas
-(rsl-django) $ pip install scikit-learn
+(rsl-webgame) $ pip install numpy
+(rsl-webgame) $ pip install scipy
+(rsl-webgame) $ pip install matplotlib
+(rsl-webgame) $ pip install pandas
+(rsl-webgame) $ pip install scikit-learn
 ```
 
-### DB関連
+### DB関連（不要？）
 ```bash
-(rsl-django) $ pip install psycopg2-binary
+(rsl-webgame) $ pip install psycopg2-binary
 ```
 
-### NLP関連
+### NLP関連（不要？）
 ```bash
-(rsl-django) $ pip install mecab-python3
-(rsl-django) $ pip install ginza
-(rsl-django) $ pip install ja-ginza
-(rsl-django) $ pip install spacy
+(rsl-webgame) $ pip install mecab-python3
+(rsl-webgame) $ pip install ginza
+(rsl-webgame) $ pip install ja-ginza
+(rsl-webgame) $ pip install spacy
 ```
 
 ### スクレイピング関連
 ```bash
-(rsl-django) $ pip install beautifulsoup4
-(rsl-django) $ pip install requests
+(rsl-webgame) $ pip install beautifulsoup4（不要？）
+(rsl-webgame) $ pip install requests
 ```
 
 ### Django関連
 ```bash
-(rsl-django) $ pip install django
-(rsl-django) $ pip install django-leaflet
-(rsl-django) $ export CPLUS_INCLUDE_PATH=/usr/include/gdal
-(rsl-django) $ export C_INCLUDE_PATH=/usr/include/gdal
-(rsl-django) $ gdalinfo --version
-GDAL 3.4.1, released 2021/12/27
-(rsl-django) $ pip install gdal==3.4.1 # libgdal-devのバージョンに合わせる # GeoDjangoに必要
+(rsl-webgame) $ pip install django
+(rsl-webgame) $ pip install django-leaflet
+(rsl-webgame) $ export CPLUS_INCLUDE_PATH=/usr/include/gdal（不要？）
+(rsl-webgame) $ export C_INCLUDE_PATH=/usr/include/gdal（不要？）
+(rsl-webgame) $ gdalinfo --version（不要？）
+GDAL 3.4.1, released 2021/12/27（不要？）
+(rsl-webgame) $ pip install gdal==3.4.1 # libgdal-devのバージョンに合わせる # GeoDjangoに必要（不要？）
 # 「ERROR: Could not build wheels for gdal, which is required to install pyproject.toml-based projects」というエラーが出るので要調査
 # ...（1分程度）...
-(rsl-django) $ pip install djangorestframework-gis # RESTful APIに必要
-(rsl-django) $ pip install django-filter # RESTful APIに必要
-(rsl-django) $ pip install markdown # RESTful APIに必要
-(rsl-django) $ pip install django-bootstrap5
-(rsl-django) $ pip install django-allauth
-(rsl-django) $ pip install django-cleanup
+(rsl-webgame) $ pip install djangorestframework-gis # RESTful APIに必要
+(rsl-webgame) $ pip install django-filter # RESTful APIに必要
+(rsl-webgame) $ pip install markdown # RESTful APIに必要
+(rsl-webgame) $ pip install django-bootstrap5
+(rsl-webgame) $ pip install django-allauth
+(rsl-webgame) $ pip install django-cleanup
 ```
 
 ### インストール済みパッケージの確認
 ```bash
-(rsl-django) $ pip freeze
+(rsl-webgame) $ pip freeze
 ```
 
-## rsl-django仮想環境のディアクティベート
+## rsl-webgame仮想環境のディアクティベート
 ```bash
-(rsl-django) $ deactivate
+(rsl-webgame) $ deactivate
 # プロンプトが元に戻ればOK
 ```
 
