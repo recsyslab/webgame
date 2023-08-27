@@ -325,4 +325,7 @@ $ code
 > wsl --export webgame wsl2\webgame.tar
 ```
 
+#### 参考
+1. [WSLで構築した環境をエクスポートして共有する - Qiita](https://qiita.com/tkc_tsuchiya/items/abfd040aebc8d0332eab)
+
 {% endraw %}
