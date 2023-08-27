@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Codeのインストール
+title: Visual Studio Codeの設定
 layout: default
 ---
 
