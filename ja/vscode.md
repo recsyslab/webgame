@@ -7,6 +7,8 @@ layout: default
 
 {% raw %}
 
+## 初期設定
+
 1. Visual Studio Codeを起動する。
 ```bash
 (rsl-webgame) $ code
@@ -24,6 +26,39 @@ layout: default
       3. `Django`を選択する。
    5. 上メニューから**Start Debugging**ボタン（再生ボタン）をクリックする。
    6. ブラウザで`http://localhost:8000/`にアクセスし、「The install worked successfully! Congratulations!」と表示されればOK。
+
+## データベースの設定
+1. 左メニューから**Run and Debug**アイコンをクリックする。
+   1. **Open 'launch.json'**アイコン（歯車アイコン）をクリックする。
+   2. `launch.json`に下記のように`DB_USER`と`DB_PASSWORD`に関する設定を追加する。
+
+リスト1: `lauch.json`
+```json
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Django",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "runserver"
+            ],
+            "django": true,
+            "justMyCode": true,
+            "env": {
+                "DB_USER": "rsl",
+                "DB_PASSWORD": "【パスワード】",
+            }
+        }
+    ]
+}
+```
+
 
 #### 参考
 1. [Python and Django tutorial in Visual Studio Code](https://code.visualstudio.com/docs/python/tutorial-django)
