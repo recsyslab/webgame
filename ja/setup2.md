@@ -1,5 +1,5 @@
 ---
-title: webgame_baseからのインポートによる環境構築
+title: 環境構築（受講者向け）
 layout: default
 ---
 
@@ -7,7 +7,7 @@ layout: default
 
 {% raw %}
 
-# 環境構築
+# 環境構築（受講者向け）
 ※こちらのページは演習受講者用です。演習で配布される`webgame_base.tar`を使用してください。
 
 ## webgame環境の構築
