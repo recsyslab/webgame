@@ -71,28 +71,12 @@ $ sudo apt upgrade
 
 ### ディレクトリの準備（不要？）
 ```bash
-$ mkdir ~/bin/
 $ mkdir ~/src/
-$ mkdir ~/opt/
 ```
 
-### 設定ファイルの準備（不要？）
-```bash
-$ cp ~/.profile ~/.profile-org
-$ echo -e '\n\n#### #### Add below. #### ####' >> ~/.profile
-$ diff ~/.profile-org ~/.profile
-$ cp ~/.bashrc ~/.bashrc-org
-$ echo -e '\n\n#### #### Add below. #### ####' >> ~/.bashrc
-$ diff ~/.bashrc-org ~/.bashrc
-$ sudo cp /etc/apt/sources.list /etc/apt/sources.list-org
-$ sudo sh -c 'echo "\n\n#### #### Add below. #### ####" >> /etc/apt/sources.list'
-$ diff /etc/apt/sources.list-org /etc/apt/sources.list
-```
-
-### `make`、`git`のインストール
+### `make`のインストール
 ```bash
 sudo apt install make
-sudo apt install git（不要？）
 ```
 
 ### `sysv-rc-conf`のインストール
@@ -120,7 +104,7 @@ $ sudo apt update
 $ sudo apt install google-chrome-stable
 ```
 
-日本語の文字化けへの対応
+#### 日本語の文字化けへの対応
 ```bash
 $ sudo apt install language-pack-ja
 $ sudo apt install fonts-ipafont
@@ -199,27 +183,6 @@ $ sudo -u postgres psql
 $ sudo apt install tree
 ```
 
-### データ分析関連（不要？）
-```bash
-$ sudo apt install libbz2-dev # pandasのインポートに必要
-$ sudo apt install python3-tk # matplotlib.show()で画像を表示する際に必要
-$ sudo apt install libffi-dev # scikit-learnのインポートに必要
-```
-
-### GDAL関連（不要？）
-```bash
-$ sudo apt install build-essential # GDALのインストールに必要
-$ sudo apt install libgdal-dev	# GDALのインストールに必要
-$ sudo apt install python3-gdal	# GDALのインストールに必要
-$ sudo apt install gdal-bin # GDALのインストールに必要
-# ...（5分程度）...
-```
-
-### NLP関連（不要？）
-```bash
-$ sudo apt install mecab libmecab-dev mecab-ipadic mecab-ipadic-utf8
-```
-
 ## Pythonのバージョンの確認
 ```bash
 $ python3 --version
@@ -254,16 +217,6 @@ $ source ~/venv/rsl-webgame/bin/activate
 ### 基本
 ```bash
 (rsl-webgame) $ pip install ipython
-(rsl-webgame) $ pip install tqdm（不要？）
-```
-
-### データ分析関連（不要？）
-```bash
-(rsl-webgame) $ pip install numpy
-(rsl-webgame) $ pip install scipy
-(rsl-webgame) $ pip install matplotlib
-(rsl-webgame) $ pip install pandas
-(rsl-webgame) $ pip install scikit-learn
 ```
 
 ### DB関連
@@ -271,17 +224,8 @@ $ source ~/venv/rsl-webgame/bin/activate
 (rsl-webgame) $ pip install psycopg2-binary
 ```
 
-### NLP関連（不要？）
-```bash
-(rsl-webgame) $ pip install mecab-python3
-(rsl-webgame) $ pip install ginza
-(rsl-webgame) $ pip install ja-ginza
-(rsl-webgame) $ pip install spacy
-```
-
 ### スクレイピング関連
 ```bash
-(rsl-webgame) $ pip install beautifulsoup4（不要？）
 (rsl-webgame) $ pip install requests
 ```
 
@@ -289,13 +233,6 @@ $ source ~/venv/rsl-webgame/bin/activate
 ```bash
 (rsl-webgame) $ pip install django
 (rsl-webgame) $ pip install django-leaflet
-(rsl-webgame) $ export CPLUS_INCLUDE_PATH=/usr/include/gdal（不要？）
-(rsl-webgame) $ export C_INCLUDE_PATH=/usr/include/gdal（不要？）
-(rsl-webgame) $ gdalinfo --version（不要？）
-GDAL 3.4.1, released 2021/12/27（不要？）
-(rsl-webgame) $ pip install gdal==3.4.1 # libgdal-devのバージョンに合わせる # GeoDjangoに必要（不要？）
-# 「ERROR: Could not build wheels for gdal, which is required to install pyproject.toml-based projects」というエラーが出るので要調査
-# ...（1分程度）...
 (rsl-webgame) $ pip install djangorestframework-gis # RESTful APIに必要
 (rsl-webgame) $ pip install django-filter # RESTful APIに必要
 (rsl-webgame) $ pip install markdown # RESTful APIに必要
