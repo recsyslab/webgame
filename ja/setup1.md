@@ -69,11 +69,6 @@ $ sudo apt update
 $ sudo apt upgrade
 ```
 
-### ディレクトリの準備（不要？）
-```bash
-$ mkdir ~/src/
-```
-
 ### `make`のインストール
 ```bash
 sudo apt install make
