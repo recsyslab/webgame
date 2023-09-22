@@ -1,11 +1,13 @@
 ---
-title: Visual Studio Code
+title: Visual Studio Codeの設定
 layout: default
 ---
 
 {% include header.html %}
 
 {% raw %}
+
+# Visual Studio Codeの設定
 
 ## 初期設定
 
