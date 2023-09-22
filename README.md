@@ -37,8 +37,9 @@ PythonのWebアプリケーションフレームワークであるDjangoによ�
 ## 目次
 
 ### 事前準備
-- [環境構築](ja/setup.md)
-- [PyCharmのインストールと設定](ja/pycharm.md)
+- [環境構築（一般向け）](ja/setup1.md)
+- [環境構築（受講者向け）](ja/setup2.md)
+- [Visual Studio Codeの設定](ja/vscode.md)
 
 ### プロジェクトの作成と初期設定
 - [01 プロジェクトの作成](ja/01.md)
