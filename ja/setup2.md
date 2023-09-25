@@ -8,7 +8,7 @@ layout: default
 {% raw %}
 
 # 環境構築（受講者向け）
-※こちらのページは演習受講者用です。演習で配布される`webgame_base.tar`を使用してください。
+※こちらのページは演習受講者用です。演習で配布される`webgame_base.tar`を`.\wsl2\`に置いてください。
 
 ## webgame環境の構築
 
