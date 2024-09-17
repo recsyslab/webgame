@@ -13,11 +13,10 @@ layout: default
 
 1. Visual Studio Codeを起動する。
 ```bash
-(rsl-webgame) $ code
+(rsl-webgame) $ cd ~/webgame/
+(rsl-webgame) $ code .
 ```
-   1. **File > Open Folder**メニューを開く。
-      1. `/home/rsl/webgame/`を選択し、**Open**ボタンをクリックする。
-      2. 「Do you trust the authors of the files in this folder?」というメッセージが表示されたら、**Yes, I trust the authors**ボタンをクリックする。
+   1. 「Do you trust the authors of the files in this folder?」というメッセージが表示されたら、**Yes, I trust the authors**ボタンをクリックする。
    2. 左メニューから**Extensions**アイコンをクリックする。
       1. `Python`を選択し、`Install`ボタンをクリックする。
    3. **View > Command Palette**メニューを開く。
