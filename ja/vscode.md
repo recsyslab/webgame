@@ -23,8 +23,9 @@ layout: default
       1. `Python: select interpreter`をクリックし、`Python 3.**.** ('rsl-webgame')`を選択する。
    4. 左メニューから**Run and Debug**アイコンをクリックする。
       1. **create a launch.json file**をクリックする。
-      2. `Python`を選択する。
+      2. `Python Debugger`を選択する。
       3. `Django`を選択する。
+      4. `manage.py`を選択する。
    5. 上メニューから**Start Debugging**ボタン（再生ボタン）をクリックする。
    6. ブラウザで`http://localhost:8000/`にアクセスし、「The install worked successfully! Congratulations!」と表示されればOK。
 
@@ -42,19 +43,19 @@ layout: default
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Django",
-            "type": "python",
+            "name": "Python Debugger: Django",
+            "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/manage.py",
             "args": [
                 "runserver"
             ],
             "django": true,
-            "justMyCode": true,
-            "env": {
-                "DB_USER": "rsl",
-                "DB_PASSWORD": "【パスワード】",
-            }
+            "autoStartBrowser": false,
+            "program": "${workspaceFolder}/manage.py",   // <- 「,」を追加
+            "env": {                                     // <- 追加
+                "DB_USER": "rsl",                        // <- 追加
+                "DB_PASSWORD": "ryukoku",                // <- 追加
+            }                                            // <- 追加
         }
     ]
 }
