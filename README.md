@@ -40,7 +40,6 @@ PythonのWebアプリケーションフレームワークであるDjangoによ�
 - [環境構築（一般向け）](ja/setup1.md)
 - [環境構築（受講者（wsl）向け）](ja/setup2.md)
 - [環境構築（受講者（VirtualBox）向け）](ja/setup3.md)
-- [Visual Studio Codeの設定](ja/vscode.md)
 
 ### プロジェクトの作成と初期設定
 - [01 プロジェクトの作成](ja/01.md)
@@ -81,6 +80,9 @@ PythonのWebアプリケーションフレームワークであるDjangoによ�
 - [24 管理サイト](ja/24.md)
 - [25 データベースからのデータの取得](ja/25.md)
 - [26 データベースへのデータの登録](ja/26.md)
+
+### Visual Studio Codeの設定
+- [Visual Studio Codeの設定](ja/vscode.md)
 
 ## 参考
 
