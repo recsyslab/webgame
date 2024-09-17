@@ -32,6 +32,11 @@ $ source ~/venv/rsl-webgame/bin/activate
 (rsl-webgame) $ pip freeze
 ```
 
+### パッケージのインストール
+```bash
+(rsl-webgame) $ sudo apt install tree
+```
+
 ## rsl-webgame仮想環境のディアクティベート
 ```bash
 (rsl-webgame) $ deactivate
