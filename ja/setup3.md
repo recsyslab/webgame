@@ -7,7 +7,7 @@ layout: default
 
 {% raw %}
 
-# 環境構築（VirtualBox）（受講者向け）
+# 環境構築（受講者（VirtualBox）向け）
 ※こちらのページは演習受講者（VirtualBox）用です。
 
 ## webgame環境の設定
