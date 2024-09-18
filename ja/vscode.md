@@ -54,7 +54,7 @@ layout: default
             "program": "${workspaceFolder}/manage.py",   // <- 「,」を追加
             "env": {                                     // <- 追加
                 "DB_USER": "rsl",                        // <- 追加
-                "DB_PASSWORD": "ryukoku",                // <- 追加
+                "DB_PASSWORD": "rsl-pass",               // <- 追加
             }                                            // <- 追加
         }
     ]
