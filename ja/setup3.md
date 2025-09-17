@@ -13,6 +13,11 @@ layout: default
 ## webgame環境の設定
 ※VirtualBoxの`rsl-webdb`環境を起動したうえで、以下のコマンドを実行してください。
 
+### スタートアップシェルスクリプトの実行
+```bash
+$ ~/bin/startup.sh
+```
+
 ### パッケージのアップグレード
 ```bash
 $ sudo apt update
