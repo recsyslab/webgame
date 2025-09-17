@@ -24,22 +24,29 @@ $ sudo apt update
 $ sudo apt upgrade
 ```
 
+## rsl-webgame仮想環境の構築
+```bash
+$ cd
+$ python3.12 -m venv rsl-webgame
+```
+
 ## rsl-webgame仮想環境のアクティベート
 ```bash
 $ source ~/venv/rsl-webgame/bin/activate
+(rsl-webgame) $ pip install --upgrade pip
 # プロンプトが(rsl-webgame) ...$となればOK
 ```
-
 以降、プロンプトが`(rsl-webgame) $`となっている行はrsl-webgame仮想環境上で実行することを表します。
+
+## rsl-webgame仮想環境へのrsl_base仮想環境の複製
+```bash
+(rsl-webgame) $ pip install --upgrade pip
+(rsl-webgame) $ pip install -r ~/venv/rsl_base_requirements.txt
+```
 
 ### インストール済みパッケージの確認
 ```bash
 (rsl-webgame) $ pip freeze
-```
-
-### パッケージのインストール
-```bash
-(rsl-webgame) $ sudo apt install tree
 ```
 
 ## rsl-webgame仮想環境のディアクティベート
