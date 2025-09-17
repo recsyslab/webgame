@@ -27,7 +27,7 @@ $ sudo apt upgrade
 ## rsl-webgame仮想環境の構築
 ```bash
 $ cd
-$ python3.12 -m venv rsl-webgame
+$ python3.12 -m venv ~/venv/rsl-webgame
 ```
 
 ## rsl-webgame仮想環境のアクティベート
