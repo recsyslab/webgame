@@ -11,7 +11,7 @@ layout: default
 ※こちらのページは演習受講者（VirtualBox）用です。
 
 ## webgame環境の設定
-※VirtualBoxの`rsl-webgame`環境を起動したうえで、以下のコマンドを実行してください。
+※VirtualBoxの`rsl-webdb`環境を起動したうえで、以下のコマンドを実行してください。
 
 ### パッケージのアップグレード
 ```bash
