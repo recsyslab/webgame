@@ -33,7 +33,7 @@ $ python3.12 -m venv ~/venv/rsl-webgame
 ## rsl-webgame仮想環境のアクティベート
 ```bash
 $ source ~/venv/rsl-webgame/bin/activate
-(rsl-webgame) $ pip install --upgrade pip
+(rsl-webgame) $
 # プロンプトが(rsl-webgame) ...$となればOK
 ```
 以降、プロンプトが`(rsl-webgame) $`となっている行はrsl-webgame仮想環境上で実行することを表します。
