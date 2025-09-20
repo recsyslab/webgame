@@ -46,7 +46,7 @@ $ source ~/venv/rsl-webgame/bin/activate
 
 ## 各種パッケージのインストール
 ```bash
-(rsl-webgame) $ pip install django
+(rsl-webgame) $ pip install django==5.1
 (rsl-webgame) $ pip install django-leaflet
 (rsl-webgame) $ pip install djangorestframework-gis # RESTful APIに必要
 (rsl-webgame) $ pip install django-filter # RESTful APIに必要
